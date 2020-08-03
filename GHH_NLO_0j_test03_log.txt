@@ -1,0 +1,66 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.7.3                 2020-06-21         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from input/mg5_configuration.txt 
+set fastjet to fastjet-config
+/Users/carter/Desktop/Software/MG5_aMC_v2_7_3/HEPTools/lhapdf6/bin/lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+[1;34mWARNING: launching caffeinate to prevent idle sleep when MG5aMC is running. Run './bin/mg5_aMC -s' to prevent this. [0m
+import /Users/carter/Desktop/Software/MG5_aMC_v2_7_3/GHH_NLO_0j_test03.txt
+The import format was not given, so we guess it as command
+import model HC_NLO_X0_UFO
+[1;60mINFO: Please read carefully the README of the model file for instructions/restrictions of the model. [0m
+INFO: Restrict model HC_NLO_X0_UFO with file models/HC_NLO_X0_UFO/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g gh gh~ d u s c d~ u~ s~ c~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ b t b~ t~ z w+ x0 w- ta- ta+
+generate p p > w- x0 > l- l- vl~ vl~ w+ / a [QCD]
+[1m------------------------------------------------------------------------[0m
+[1m No Born diagrams found. Now switching to the loop-induced mode.        [0m
+[1m Please cite ref. 'arXiv:1507.00020' when using results from this mode. [0m
+[1m------------------------------------------------------------------------[0m
+[1;34mWARNING: Some loop diagrams contributing to this process are discarded because they are not pure (QCD)-perturbation.
+Make sure you did not want to include them. [0m
+[1;34mWARNING: Some loop diagrams contributing to this process are discarded because they are not pure (QCD)-perturbation.
+Make sure you did not want to include them. [0m
+[1;34mWARNING: Some loop diagrams contributing to this process are discarded because they are not pure (QCD)-perturbation.
+Make sure you did not want to include them. [0m
+[1;34mWARNING: Some loop diagrams contributing to this process are discarded because they are not pure (QCD)-perturbation.
+Make sure you did not want to include them. [0m
+[1;34mWARNING: Some loop diagrams contributing to this process are discarded because they are not pure (QCD)-perturbation.
+Make sure you did not want to include them. [0m
+[1;34mWARNING: Some loop diagrams contributing to this process are discarded because they are not pure (QCD)-perturbation.
+Make sure you did not want to include them. [0m
+quit

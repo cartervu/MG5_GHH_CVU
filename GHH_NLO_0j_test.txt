@@ -1,0 +1,3 @@
+import model HC_NLO_X0_UFO
+generate p p > w- x0 > l- l- vl~ vl~ w+ / a
+

@@ -1,0 +1,279 @@
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.7.3                 2020-06-21         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from input/mg5_configuration.txt 
+set fastjet to fastjet-config
+/Users/carter/Desktop/Software/MG5_aMC_v2_7_3/HEPTools/lhapdf6/bin/lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+[1;34mWARNING: launching caffeinate to prevent idle sleep when MG5aMC is running. Run './bin/mg5_aMC -s' to prevent this. [0m
+import /Users/carter/Desktop/Software/MG5_aMC_v2_7_3/GHH_NLO_0j_test02.txt
+The import format was not given, so we guess it as command
+import model HC_NLO_X0_UFO
+[1;60mINFO: Please read carefully the README of the model file for instructions/restrictions of the model. [0m
+INFO: Restrict model HC_NLO_X0_UFO with file models/HC_NLO_X0_UFO/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g gh gh~ d u s c d~ u~ s~ c~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ b t b~ t~ z w+ x0 w- ta- ta+
+generate p p > w- x0 > l- l- vl~ vl~ j j / a
+INFO: Checking for minimal orders which gives processes. 
+INFO: Please specify coupling orders to bypass this step. 
+INFO: Trying coupling order WEIGHTED<=10: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=11: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=12: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=13: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=14: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=15: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=16: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=17: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=18: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=19: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=20: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=21: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=22: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying coupling order WEIGHTED<=23: WEIGTHED IS 2*QNP+2*QED+QCD 
+INFO: Trying process: d d > w- x0 > e- e- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- e- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > e- mu- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d d > w- x0 > mu- mu- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- e- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > e- mu- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d s > w- x0 > mu- mu- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d u~ > w- x0 > e- e- ve~ ve~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d u~ > w- x0 > e- e- ve~ ve~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d u~ > w- x0 > e- mu- ve~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d u~ > w- x0 > e- mu- ve~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d u~ > w- x0 > mu- mu- vm~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d u~ > w- x0 > mu- mu- vm~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d c~ > w- x0 > e- e- ve~ ve~ u s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d c~ > w- x0 > e- mu- ve~ vm~ u s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: d c~ > w- x0 > mu- mu- vm~ vm~ u s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s d > w- x0 > e- e- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s d > w- x0 > e- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s d > w- x0 > mu- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- e- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > e- mu- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ ve~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ ve~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ ve~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- ve~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vm~ vm~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vm~ vm~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vm~ vm~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vm~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vm~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vm~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vt~ vt~ u u QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vt~ vt~ u c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s s > w- x0 > mu- mu- vt~ vt~ c c QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s u~ > w- x0 > e- e- ve~ ve~ c d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s u~ > w- x0 > e- mu- ve~ vm~ c d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s u~ > w- x0 > mu- mu- vm~ vm~ c d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s c~ > w- x0 > e- e- ve~ ve~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s c~ > w- x0 > e- e- ve~ ve~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s c~ > w- x0 > e- mu- ve~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s c~ > w- x0 > e- mu- ve~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s c~ > w- x0 > mu- mu- vm~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: s c~ > w- x0 > mu- mu- vm~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ d > w- x0 > e- e- ve~ ve~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ d > w- x0 > e- e- ve~ ve~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ d > w- x0 > e- mu- ve~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ d > w- x0 > e- mu- ve~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ d > w- x0 > mu- mu- vm~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ d > w- x0 > mu- mu- vm~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ s > w- x0 > e- e- ve~ ve~ c d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ s > w- x0 > e- mu- ve~ vm~ c d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ s > w- x0 > mu- mu- vm~ vm~ c d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ u~ > w- x0 > e- e- ve~ ve~ d~ d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ u~ > w- x0 > e- mu- ve~ vm~ d~ d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ u~ > w- x0 > mu- mu- vm~ vm~ d~ d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ c~ > w- x0 > e- e- ve~ ve~ d~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ c~ > w- x0 > e- mu- ve~ vm~ d~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: u~ c~ > w- x0 > mu- mu- vm~ vm~ d~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ d > w- x0 > e- e- ve~ ve~ u s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ d > w- x0 > e- mu- ve~ vm~ u s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ d > w- x0 > mu- mu- vm~ vm~ u s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ s > w- x0 > e- e- ve~ ve~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ s > w- x0 > e- e- ve~ ve~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ s > w- x0 > e- mu- ve~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ s > w- x0 > e- mu- ve~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ s > w- x0 > mu- mu- vm~ vm~ u d~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ s > w- x0 > mu- mu- vm~ vm~ c s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ u~ > w- x0 > e- e- ve~ ve~ d~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ u~ > w- x0 > e- mu- ve~ vm~ d~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ u~ > w- x0 > mu- mu- vm~ vm~ d~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ c~ > w- x0 > e- e- ve~ ve~ s~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ c~ > w- x0 > e- mu- ve~ vm~ s~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+INFO: Trying process: c~ c~ > w- x0 > mu- mu- vm~ vm~ s~ s~ QNP<=1 WEIGHTED<=24 / a @1  
+quit
